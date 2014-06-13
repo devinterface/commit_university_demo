@@ -44,6 +44,11 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'spree', '2.2.2'
+gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+gem 'spree_solr', :git => 'git://github.com/devinterface/spree_solr.git', :branch => '2-2-stable'
+gem 'spree_monetaweb', :git => 'git://github.com/devinterface/spree_monetaweb.git', :branch => '2-2-stable'

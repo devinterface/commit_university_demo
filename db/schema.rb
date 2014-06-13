@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140613141471) do
+ActiveRecord::Schema.define(version: 20140613182531) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -290,6 +290,7 @@ ActiveRecord::Schema.define(version: 20140613141471) do
     t.string   "cvv_response_code"
     t.string   "cvv_response_message"
     t.decimal  "uncaptured_amount",    precision: 10, scale: 2, default: 0.0
+    t.string   "monetaweb_payment_id"
   end
 
   add_index "spree_payments", ["order_id"], name: "index_spree_payments_on_order_id"
