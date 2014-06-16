@@ -16,3 +16,10 @@
 /tmp
 .idea
 public/spree/*
+solr/data/*
+solr/default/*
+solr/development/*
+solr/pids/*
+solr/test/*
+log/*
+
